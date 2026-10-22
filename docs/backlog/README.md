@@ -1,6 +1,6 @@
 # Backlog
 
-Every piece of work for the Deals UI project. Pick tickets up in sprint order and respect the dependencies. Each ticket is done when its acceptance criteria are met and the definition of done in the [KT handover](../KT-HANDOVER.md#11-how-we-work-together) is satisfied.
+Every piece of work for the Deals UI project, in three sprints. Pick tickets up in sprint order and respect the dependencies. Each ticket is done when its acceptance criteria are met and the definition of done in the [KT handover](../KT-HANDOVER.md#11-how-we-work-together) is satisfied.
 
 ## Sprint 1: A signed-in rep can find any customer and see the whole relationship.
 
@@ -46,6 +46,29 @@ Every piece of work for the Deals UI project. Pick tickets up in sprint order an
 | [NIM-142 · Release](NIM-142-release.md) | Task | Quality & release | High | 2 |
 
 **Sprint 3 total: 28 points**
+
+## Demos
+
+| Sprint | Demo to Priya |
+|---|---|
+| 1 | Sign in as a rep, find Nadia Fenwick, open her profile and her company |
+| 2 | Aisha works her pipeline; Priya reads her Monday number |
+| 3 | Priya creates a deal for Ben; Ben finds it; test evidence and release notes |
+
+## How the sprints run
+
+- **Planning** at the start of each sprint: confirm the goal, pull the tickets, raise questions for Priya.
+- **Stand-up** daily: done, next, blocked. Raise blockers the same day.
+- **Refinement** mid-sprint: read the next sprint's tickets and send your questions to Priya and the backend team in writing.
+- **Review** at the end: demo working software against each ticket's acceptance criteria. Each ticket is accepted or rejected.
+- **Retrospective** at the end: one thing to change next sprint.
+
+**Rules**
+
+- NIM-100 (the specification) is finished before any screen ticket starts.
+- A ticket is in progress only when someone owns it and it has a branch.
+- A ticket is done only when its acceptance criteria are shown working against the real API.
+- A ticket that is not done goes back to the backlog with a note. It is never "done except for tests".
 
 ## By epic
 

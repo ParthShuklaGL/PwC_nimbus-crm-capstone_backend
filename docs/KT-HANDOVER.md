@@ -6,7 +6,7 @@
 | **To** | Frontend team, Deals UI project |
 | **Product owner** | Priya Raghavan, Head of Inside Sales |
 | **Status** | Backend v1.0 released to the shared dev environment. The frontend starts now |
-| **Read with** | [Stakeholder brief](stakeholder-brief.md) · [Backlog](backlog/README.md) · [Sprint plan](SPRINT-PLAN.md) · [Designs](designs/README.md) |
+| **Read with** | [Stakeholder brief](stakeholder-brief.md) · [Backlog](backlog/README.md) · [Designs](designs/README.md) |
 
 ---
 
@@ -180,7 +180,7 @@ The brief asks for these, and the backend **does not support** them. Don't build
 
 ## 11. How we work together
 
-- **Backlog:** [`docs/backlog/`](backlog/README.md). Every piece of work is a ticket (`NIM-1xx`) with acceptance criteria. Pick up tickets in the order of the [sprint plan](SPRINT-PLAN.md).
+- **Backlog:** [`docs/backlog/`](backlog/README.md). Every piece of work is a ticket (`NIM-1xx`) with acceptance criteria. Pick up tickets in sprint order (the sprint goals and rules are in the [backlog index](backlog/README.md)).
 - **Designs:** [`docs/designs/`](designs/README.md) shows the **design intent** for the main screens. It isn't pixel-perfect. Any state not shown (loading, empty, errors, the rep's view) is for you to design.
 - **Specification first:** NIM-100 (the spec, using `docs/specs/_template.md`) is done before any screen ticket starts.
 - **Branches and PRs:**

@@ -5,7 +5,7 @@ You are joining the **frontend team** for Nimbus Sales' CRM. The backend team ha
 **Start here:**
 1. **[KT handover](docs/KT-HANDOVER.md)** ([PDF pack](docs/KT-PACK.pdf)): what exists, what the client wants, what isn't supported, and how we work.
 2. **[Stakeholder brief](docs/stakeholder-brief.md)**: the client's own words.
-3. **[Backlog](docs/backlog/README.md)** and **[sprint plan](docs/SPRINT-PLAN.md)**: 24 tickets over three sprints.
+3. **[Backlog](docs/backlog/README.md)**: 24 tickets over three sprints, with the sprint goals and how the sprints run.
 4. **[Designs](docs/designs/README.md)**: the design intent for the main screens.
 
 | Folder | What it is |

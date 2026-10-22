@@ -494,13 +494,38 @@ for (const t of T) {
 
 // Index
 const idx = ['# Backlog', '',
-  'Every piece of work for the Deals UI project. Pick tickets up in sprint order and respect the dependencies. Each ticket is done when its acceptance criteria are met and the definition of done in the [KT handover](../KT-HANDOVER.md#11-how-we-work-together) is satisfied.', ''];
+  'Every piece of work for the Deals UI project, in three sprints. Pick tickets up in sprint order and respect the dependencies. Each ticket is done when its acceptance criteria are met and the definition of done in the [KT handover](../KT-HANDOVER.md#11-how-we-work-together) is satisfied.', ''];
 for (const s of [1, 2, 3]) {
   const ts = T.filter((t) => t.sprint === s);
   idx.push(`## Sprint ${s}: ${SPRINTS[s]}`, '', '| Ticket | Type | Epic | Priority | Points |', '|---|---|---|---|---|');
   for (const t of ts) idx.push(`| [${t.id} · ${t.title}](${file(t)}) | ${t.type} | ${EPICS[t.epic]} | ${t.priority} | ${t.points} |`);
   idx.push('', `**Sprint ${s} total: ${ts.reduce((n, t) => n + t.points, 0)} points**`, '');
 }
+idx.push(
+  '## Demos',
+  '',
+  '| Sprint | Demo to Priya |',
+  '|---|---|',
+  '| 1 | Sign in as a rep, find Nadia Fenwick, open her profile and her company |',
+  '| 2 | Aisha works her pipeline; Priya reads her Monday number |',
+  '| 3 | Priya creates a deal for Ben; Ben finds it; test evidence and release notes |',
+  '',
+  '## How the sprints run',
+  '',
+  '- **Planning** at the start of each sprint: confirm the goal, pull the tickets, raise questions for Priya.',
+  '- **Stand-up** daily: done, next, blocked. Raise blockers the same day.',
+  '- **Refinement** mid-sprint: read the next sprint\'s tickets and send your questions to Priya and the backend team in writing.',
+  '- **Review** at the end: demo working software against each ticket\'s acceptance criteria. Each ticket is accepted or rejected.',
+  '- **Retrospective** at the end: one thing to change next sprint.',
+  '',
+  '**Rules**',
+  '',
+  '- NIM-100 (the specification) is finished before any screen ticket starts.',
+  '- A ticket is in progress only when someone owns it and it has a branch.',
+  '- A ticket is done only when its acceptance criteria are shown working against the real API.',
+  '- A ticket that is not done goes back to the backlog with a note. It is never "done except for tests".',
+  '',
+);
 idx.push('## By epic', '');
 for (const [k, name] of Object.entries(EPICS)) {
   idx.push(`- **${name}:** ${T.filter((t) => t.epic === k).map((t) => link(t.id)).join(', ')}`);
